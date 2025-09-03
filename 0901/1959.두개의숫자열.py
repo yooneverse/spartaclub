@@ -4,11 +4,10 @@
 
 T = int(input())                              # 테스트 케이스 총 개수 먼저 입력받음
 
-for tc in range(1, T + 1):                    # 테스트 케이스 하나씩 처리 시작
+for t in range(1, T + 1):                    # 테스트 케이스 하나씩 처리 시작
     n, m = map(int, input().split())          # 두 수 n, m 입력받기
     Aj = list(map(int, input().split()))      # n개의 정수 입력받아 리스트 Aj에 저장
     Bj = list(map(int, input().split()))      # m개의 정수 입력받아 리스트 Bj에 저장
-
 
     if n > m:                                 # n이 m보다 크다고 가정
         n, m = m, n                           # n이 항상 더 짧게 만들기 위해서는 바뀌어야 함
@@ -23,7 +22,7 @@ for tc in range(1, T + 1):                    # 테스트 케이스 하나씩 �
             max_sum = curr                    # 최댓값 갱신
 
     
-    print(f"#{tc} {max_sum}")                 # 최댓값을 구해서 결과 출력
+    print(f"#{t} {max_sum}")                 # 최댓값을 구해서 결과 출력
 
 
 '''
