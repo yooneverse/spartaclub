@@ -8,7 +8,7 @@ for tc in range(1, T+1):
 
     # 열 탐색
     for col in range(m):                  # 열 단위 반복
-        cnt = 0                              # 연속된 1의 길이 초기 설정
+        cnt = 0                           # 연속된 1의 길이 초기 설정
         for row in range(n):              # 위에서 아래로 탐색
             if matrix[row][col] == 1:     # 1이면 길이 증가
                 cnt += 1
@@ -21,7 +21,7 @@ for tc in range(1, T+1):
 
     # 행 탐색
     for row in range(n):                  # 행 단위 반복
-        cnt = 0                              # 연속된 1의 길이 초기 설정
+        cnt = 0                           # 연속된 1의 길이 초기 설정
         for col in range(m):              # 왼쪽에서 오른쪽으로 탐색
             if matrix[row][col] == 1:     # 1이면 길이 증가
                 cnt += 1
